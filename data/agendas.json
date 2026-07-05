@@ -1,0 +1,66 @@
+[
+    {
+        "id": "unhrc",
+        "name": "UNHRC",
+        "fullName": "United Nations Human Rights Council",
+        "logoUrl": "https://res.cloudinary.com/dph28qrrx/image/upload/v1783270955/hrc_z1wzot.png",
+        "topic": "Protecting Children in the Digital Age: Regulating Online Gaming Exploitation, Cyberbullying, and AI-Generated Harassment",
+        "about": "The rapid expansion of digital platforms has exposed children to online exploitation, cyberbullying, addictive gaming practices, and emerging threats posed by AI-generated harassment. Delegates will deliberate on strengthening international human rights frameworks, enhancing child protection policies, promoting responsible technology governance, and ensuring accountability of digital platforms while preserving freedom of expression."
+    },
+    {
+        "id": "ip",
+        "name": "International Press",
+        "fullName": "International Press",
+        "logoUrl": "https://res.cloudinary.com/dph28qrrx/image/upload/v1783270014/IP_xxahcw.png",
+        "topic": "Photography, Journalism & Caricature",
+        "about": "The International Press serves as the voice of the conference through journalism, photography, editorial writing, and political caricature. Members are responsible for documenting committee proceedings, publishing news articles, interviewing delegates, and presenting creative visual narratives while maintaining ethical standards of reporting."
+    },
+    {
+        "id": "ipl",
+        "name": "IPL Auction",
+        "fullName": "Indian Premier League Auction Committee",
+        "logoUrl": "https://res.cloudinary.com/dph28qrrx/image/upload/v1783270341/IPL_drsdh5.png",
+        "topic": "IPL Auction 2026",
+        "about": "This simulation recreates the Indian Premier League auction, where franchise owners strategically build competitive squads within financial constraints. Participants will evaluate player performances, auction dynamics, team requirements, and long-term planning while negotiating bids in a fast-paced and engaging environment."
+    },
+    {
+        "id": "wto",
+        "name": "WTO",
+        "fullName": "World Trade Organization",
+        "logoUrl": "https://res.cloudinary.com/dph28qrrx/image/upload/v1783270016/WTO_bpovbc.png",
+        "topic": "Deliberation upon the Escalating Use of Tariffs and Counter-Tariffs in Global Trade: Balancing Protectionism and Free Trade",
+        "about": "Global trade tensions have intensified due to increasing tariff wars, retaliatory trade measures, and shifting economic alliances. Delegates will discuss the impact of protectionist policies on international commerce, economic stability, developing nations, and multilateral trade while exploring reforms to maintain a fair and rules-based trading system."
+    },
+    {
+        "id": "cockroach",
+        "name": "Cockroach Janta Committee",
+        "fullName": "Cockroach Janta Committee",
+        "logoUrl": "https://res.cloudinary.com/dph28qrrx/image/upload/v1783269637/CJP_ltmpuo.png",
+        "topic": "Deliberation upon the Growing Distrust of Public Institutions among Indian Youth: Examining Failures in Governance, Education, Employment, and Justice",
+        "about": "This special committee adopts a satirical yet policy-oriented approach to examining public dissatisfaction with governance and institutions. Delegates will debate declining public trust, unemployment, educational reforms, judicial efficiency, administrative accountability, and measures to strengthen democratic institutions while encouraging innovative and unconventional solutions."
+    },
+    {
+        "id": "bms",
+        "name": "Bhartiya Mahila Sansad",
+        "fullName": "Bhartiya Mahila Sansad",
+        "logoUrl": "https://res.cloudinary.com/dph28qrrx/image/upload/v1783271449/bms_kywzk0.png",
+        "topic": "Discussion on the Rising Crimes Against Women in India: Evaluating the Effectiveness of Existing Laws, Criminal Justice Administration, and Institutional Reforms for Prevention, Protection, and Speedy Trial",
+        "about": "Women's safety continues to be one of India's most pressing policy concerns. Delegates will evaluate existing legal frameworks, institutional mechanisms, law enforcement effectiveness, judicial reforms, victim support systems, and preventive strategies to strengthen gender justice and ensure safer communities."
+    },
+    {
+        "id": "aippm",
+        "name": "AIPPM",
+        "fullName": "All India Political Party Meet",
+        "logoUrl": "https://res.cloudinary.com/dph28qrrx/image/upload/v1783271557/aippm_yyfris.png",
+        "topic": "Deliberation on the Right to Live in Relationship in India with Special Emphasis on Government Interference regarding Love Jihad and Anti-Conversion Laws",
+        "about": "Representing India's political spectrum, delegates will debate the constitutional balance between individual liberty, religious freedom, state intervention, and public policy. Discussions will focus on live-in relationships, interfaith unions, anti-conversion legislation, federal powers, judicial precedents, and the protection of fundamental rights."
+    },
+    {
+        "id": "loksabha",
+        "name": "Lok Sabha",
+        "fullName": "Lok Sabha",
+        "logoUrl": "https://res.cloudinary.com/dph28qrrx/image/upload/v1783270954/loksabha_xzk3ei.png",
+        "topic": "Examining the Growing Influence of Hindu Nationalism on State Policy Formulation, Electoral Dynamics, and the Preservation of India's Secular Constitutional Identity with Emphasis on Ram Mandir Fraud",
+        "about": "This committee simulates proceedings of India's lower house of Parliament to debate the relationship between religion, governance, electoral politics, and constitutional values. Delegates will examine policy decisions, political narratives, secularism, institutional responsibilities, and contemporary challenges to democratic governance from diverse ideological perspectives."
+    }
+]

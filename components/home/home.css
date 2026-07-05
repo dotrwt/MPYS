@@ -1,4 +1,3 @@
-/* Hero container styles */
 .hero-container {
   position: relative;
   background-color: #000000;
@@ -128,6 +127,29 @@
   }
 }
 
+/* Entry / Load animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes tabFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Content Layout */
 .hero-content {
   position: relative;
@@ -147,6 +169,8 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
+  opacity: 0;
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0s forwards;
 }
 
 .hero-squiggle {
@@ -180,6 +204,8 @@
 .hero-title-line-1 {
   display: flex;
   align-items: flex-start;
+  opacity: 0;
+  animation: fadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
 }
 
 .hero-registered {
@@ -192,10 +218,14 @@
 
 .hero-title-line-2 {
   margin-top: 0.2rem;
+  opacity: 0;
+  animation: fadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.25s forwards;
 }
 
 .hero-cta-wrap {
   margin-top: 2.2rem;
+  opacity: 0;
+  animation: fadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
 }
 
 /* Lavender Ticket Button styling */
@@ -247,6 +277,8 @@
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 2rem;
   margin-top: 1rem;
+  opacity: 0;
+  animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.55s forwards;
 }
 
 .hero-meta-item {
@@ -1091,8 +1123,19 @@
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.speaker-card:hover .speaker-image-placeholder {
-  transform: translateY(-4px);
+.speaker-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 3;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.speaker-card:hover .speaker-image {
+  transform: scale(1.06);
 }
 
 .speaker-placeholder-bg {
@@ -1326,6 +1369,7 @@
   gap: 4rem;
   align-items: start;
   width: 100%;
+  animation: tabFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .committee-logo-col {
@@ -1372,11 +1416,40 @@
   backdrop-filter: blur(8px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.committee-logo-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
+  z-index: 3;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.committee-emblem-fallback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
 }
 
 .committee-emblem-wrap:hover .committee-emblem {
   transform: scale(1.03) translateY(-2px);
   border-color: rgba(209, 184, 252, 0.25);
+}
+
+.committee-emblem-wrap:hover .committee-logo-img {
+  transform: translate(-50%, -50%) scale(1.04);
 }
 
 .committee-emblem-svg {
