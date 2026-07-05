@@ -3,9 +3,10 @@
   position: relative;
   background-color: #000000;
   color: #ffffff;
-  padding: 4rem 2.5rem 3rem 2.5rem;
+  padding: 8.5rem 2.5rem 3rem 2.5rem;
   width: 100%;
-  min-height: 600px;
+  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,7 +30,7 @@
   left: -25%;
   width: 700px;
   height: 800px;
-  background-color: rgba(255, 255, 255, 0.28);
+  background-color: rgba(255, 255, 255, 0.12);
   border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
   animation: floatBlob1 28s infinite ease-in-out;
 }
@@ -40,7 +41,7 @@
   right: -25%;
   width: 800px;
   height: 900px;
-  background-color: rgba(255, 255, 255, 0.24);
+  background-color: rgba(255, 255, 255, 0.10);
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   animation: floatBlob2 35s infinite ease-in-out;
 }
@@ -51,7 +52,7 @@
   left: 10%;
   width: 600px;
   height: 600px;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.04);
   border-radius: 50% 50% 40% 60% / 40% 60% 50% 50%;
   animation: floatBlob3 25s infinite ease-in-out;
 }
@@ -252,7 +253,7 @@
   font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: clamp(0.9rem, 2vw, 1.05rem);
   font-weight: 500;
-  color: #c5c5c7;
+  color: #8e8e93;
   flex: 1;
 }
 
@@ -271,15 +272,13 @@
 /* Responsive Overrides */
 @media (max-width: 900px) {
   .hero-container {
-    padding: 2.5rem 1.5rem 2rem 1.5rem;
-    min-height: 520px;
+    padding: 7.5rem 1.5rem 2rem 1.5rem;
   }
 }
 
 @media (max-width: 600px) {
   .hero-container {
-    padding: 2rem 1.25rem 1.5rem 1.25rem;
-    min-height: 480px;
+    padding: 6.5rem 1.25rem 1.5rem 1.25rem;
   }
 
   .hero-title {
