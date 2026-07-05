@@ -1,5 +1,6 @@
 import Navbar from "@/components/layout/navbar/navbar";
 import Hero from "@/components/home/hero";
+import About from "@/components/home/about";
 import Footer from "@/components/layout/footer/footer";
 
 export default function Home() {
@@ -11,8 +12,8 @@ export default function Home() {
       {/* Hero Section */}
       <Hero />
 
-      {/* Spacer / Content filler if needed between sections */}
-      <div className="flex-1" />
+      {/* About Section */}
+      <About />
 
       {/* Footer component */}
       <Footer />
