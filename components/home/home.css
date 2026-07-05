@@ -965,5 +965,241 @@
   }
 }
 
+/* Speakers Section Styles */
+.speakers-section {
+  background-color: #f4f5f6;
+  color: #000000;
+  padding: 8rem 4rem;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.speakers-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.speakers-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.speakers-info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: sticky;
+  top: 6rem;
+}
+
+.speakers-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.speakers-label-text {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #000000;
+}
+
+.speakers-title {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: clamp(2.8rem, 4.8vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  color: #000000;
+  margin: 0;
+}
+
+.speakers-subtitle {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #7f848f;
+  margin: 0;
+  max-width: 320px;
+}
+
+.speakers-all-link {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.25s ease;
+  width: fit-content;
+}
+
+.speakers-all-link:hover {
+  opacity: 0.7;
+}
+
+.speakers-all-arrow {
+  color: #8b5cf6;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  font-weight: 700;
+  display: inline-block;
+}
+
+.speakers-all-link:hover .speakers-all-arrow {
+  transform: translateX(4px);
+}
+
+.speakers-grid-col {
+  width: 100%;
+}
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5rem 2rem;
+}
+
+.speaker-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.speaker-image-placeholder {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  background-color: #eaeaea;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.speaker-card:hover .speaker-image-placeholder {
+  transform: translateY(-4px);
+}
+
+.speaker-placeholder-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(0,0,0,0.02) 100%);
+  pointer-events: none;
+}
+
+.speaker-avatar-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  color: #8e939e;
+  z-index: 2;
+}
+
+.speaker-avatar-icon {
+  width: 48px;
+  height: 48px;
+  opacity: 0.45;
+}
+
+.speaker-initials {
+  font-family: var(--font-sans), sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  opacity: 0.65;
+}
+
+.speaker-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.speaker-name {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.speaker-company {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #7f848f;
+  margin: 0.1rem 0 0 0;
+  letter-spacing: 0.05em;
+}
+
+.speaker-role {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.85rem;
+  color: #8e939e;
+  margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .speakers-section {
+    padding: 6rem 2.5rem;
+  }
+  
+  .speakers-row {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .speakers-info-col {
+    position: static;
+    max-width: 100%;
+    gap: 1.2rem;
+  }
+  
+  .speakers-subtitle {
+    max-width: 100%;
+  }
+  
+  .speakers-grid {
+    gap: 2.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .speakers-section {
+    padding: 5rem 1.5rem;
+  }
+  
+  .speakers-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .speaker-image-placeholder {
+    aspect-ratio: 1.15 / 1;
+  }
+}
+
+
 
 
