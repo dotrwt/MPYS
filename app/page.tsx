@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/navbar/navbar";
 import Hero from "@/components/home/hero";
 import About from "@/components/home/about";
+import WhattoExpect from "@/components/home/WhattoExpect";
 import Footer from "@/components/layout/footer/footer";
 
 export default function Home() {
@@ -14,6 +15,9 @@ export default function Home() {
 
       {/* About Section */}
       <About />
+
+      {/* What to Expect Section */}
+      <WhattoExpect />
 
       {/* Footer component */}
       <Footer />

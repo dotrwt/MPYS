@@ -311,7 +311,8 @@
   min-height: 100vh;
   min-height: 100dvh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   box-sizing: border-box;
 }
 
@@ -461,4 +462,258 @@
     font-size: 3.5rem;
   }
 }
+
+/* Expect Section Styles */
+.expect-section {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 8rem 4rem;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.expect-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+  box-sizing: border-box;
+}
+
+.expect-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  gap: 2rem;
+}
+
+.expect-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.expect-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.expect-label-squiggle {
+  display: inline-flex;
+  align-items: center;
+}
+
+.expect-label-text {
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #000000;
+}
+
+.expect-title {
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin: 0;
+  color: #000000;
+}
+
+.expect-header-right {
+  max-width: 380px;
+  padding-bottom: 0.5rem;
+}
+
+.expect-subtitle {
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #7f848f;
+  margin: 0;
+}
+
+/* Cards Grid */
+.expect-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.expect-card {
+  position: relative;
+  background-color: #f7f8fa;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.expect-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.expect-card-title {
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0;
+  color: #000000;
+  max-width: 80%;
+}
+
+.expect-card-title.text-white {
+  color: #ffffff;
+}
+
+.expect-card-number {
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #8b5cf6;
+}
+
+.expect-card-description {
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #5a5f6a;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.expect-card-description strong {
+  color: #000000;
+  font-weight: 600;
+}
+
+/* CTA Card (Special Styling) */
+.expect-card-cta {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.expect-card-glow {
+  position: absolute;
+  top: -20%;
+  right: -20%;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(209, 184, 252, 0.15) 0%, rgba(209, 184, 252, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.expect-card-squiggle {
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.6;
+}
+
+.expect-card-bottom {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.expect-cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.9rem 1.8rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.expect-cta-arrow {
+  margin-right: 0.5rem;
+  font-weight: 700;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.expect-cta-button:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.1);
+}
+
+.expect-cta-button:hover .expect-cta-arrow {
+  transform: translateX(4px);
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .expect-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .expect-card {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 900px) {
+  .expect-section {
+    padding: 6rem 2.5rem;
+  }
+
+  .expect-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .expect-header-right {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .expect-section {
+    padding: 5rem 1.5rem;
+  }
+
+  .expect-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .expect-card {
+    min-height: 320px;
+    padding: 2rem 1.75rem;
+  }
+}
+
 
