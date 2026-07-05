@@ -1,0 +1,304 @@
+/* Hero container styles */
+.hero-container {
+  position: relative;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4rem 2.5rem 3rem 2.5rem;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Moving Background Glow Blobs */
+.hero-glow-blob-1,
+.hero-glow-blob-2,
+.hero-glow-blob-3 {
+  position: absolute;
+  pointer-events: none;
+  filter: blur(120px);
+  z-index: 1;
+}
+
+/* Blob 1: Left organic shape */
+.hero-glow-blob-1 {
+  top: -15%;
+  left: -25%;
+  width: 700px;
+  height: 800px;
+  background-color: rgba(255, 255, 255, 0.28);
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  animation: floatBlob1 28s infinite ease-in-out;
+}
+
+/* Blob 2: Right organic shape */
+.hero-glow-blob-2 {
+  top: -20%;
+  right: -25%;
+  width: 800px;
+  height: 900px;
+  background-color: rgba(255, 255, 255, 0.24);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: floatBlob2 35s infinite ease-in-out;
+}
+
+/* Blob 3: Center-left organic shape */
+.hero-glow-blob-3 {
+  bottom: -30%;
+  left: 10%;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50% 50% 40% 60% / 40% 60% 50% 50%;
+  animation: floatBlob3 25s infinite ease-in-out;
+}
+
+/* Noise/Grain Overlay */
+.hero-grain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.035;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  z-index: 2;
+}
+
+/* Animations for background blobs */
+@keyframes floatBlob1 {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  }
+  33% {
+    transform: translate(8%, 12%) rotate(120deg) scale(1.15);
+    border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
+  }
+  66% {
+    transform: translate(-5%, 18%) rotate(240deg) scale(0.9);
+    border-radius: 35% 65% 45% 55% / 45% 40% 60% 55%;
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg) scale(1);
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  }
+}
+
+@keyframes floatBlob2 {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  33% {
+    transform: translate(-10%, 8%) rotate(-120deg) scale(0.9);
+    border-radius: 45% 55% 60% 40% / 40% 55% 45% 60%;
+  }
+  66% {
+    transform: translate(5%, -12%) rotate(-240deg) scale(1.15);
+    border-radius: 50% 50% 35% 65% / 55% 45% 65% 35%;
+  }
+  100% {
+    transform: translate(0, 0) rotate(-360deg) scale(1);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+@keyframes floatBlob3 {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    border-radius: 50% 50% 40% 60% / 40% 60% 50% 50%;
+  }
+  33% {
+    transform: translate(12%, -15%) rotate(120deg) scale(1.1);
+    border-radius: 45% 55% 60% 40% / 50% 45% 55% 50%;
+  }
+  66% {
+    transform: translate(-10%, 5%) rotate(240deg) scale(0.95);
+    border-radius: 60% 40% 45% 55% / 40% 60% 45% 55%;
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg) scale(1);
+    border-radius: 50% 50% 40% 60% / 40% 60% 50% 50%;
+  }
+}
+
+/* Content Layout */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+/* Top squiggly icon styling */
+.hero-top-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.hero-squiggle {
+  filter: drop-shadow(0 0 8px rgba(209, 184, 252, 0.4));
+}
+
+/* Center Title & CTA Button styling */
+.hero-center-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto 0;
+  padding: 3rem 0;
+}
+
+.hero-title {
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: clamp(3.2rem, 8.5vw, 6.8rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.0;
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title-line-1 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero-registered {
+  font-size: 0.35em;
+  font-weight: 500;
+  position: relative;
+  top: 0.1em;
+  margin-left: 0.05em;
+}
+
+.hero-title-line-2 {
+  margin-top: 0.2rem;
+}
+
+.hero-cta-wrap {
+  margin-top: 2.2rem;
+}
+
+/* Lavender Ticket Button styling */
+.hero-cta-button {
+  background-color: #d1b8fc;
+  color: #000000;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 0.8rem 2.2rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px rgba(209, 184, 252, 0.15);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.hero-cta-arrow {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  font-weight: 600;
+}
+
+.hero-cta-button:hover {
+  background-color: #dac7ff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(209, 184, 252, 0.3);
+}
+
+.hero-cta-button:hover .hero-cta-arrow {
+  transform: translateX(4px);
+}
+
+.hero-cta-button:active {
+  transform: translateY(0);
+}
+
+/* Bottom Row Event Metadata */
+.hero-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 2rem;
+  margin-top: 1rem;
+}
+
+.hero-meta-item {
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  font-weight: 500;
+  color: #c5c5c7;
+  flex: 1;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Responsive Overrides */
+@media (max-width: 900px) {
+  .hero-container {
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-container {
+    padding: 2rem 1.25rem 1.5rem 1.25rem;
+    min-height: 480px;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .hero-bottom-row {
+    flex-direction: column;
+    gap: 0.6rem;
+    padding-top: 1.5rem;
+  }
+
+  .hero-meta-item {
+    text-align: center;
+  }
+  
+  .hero-cta-button {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+}
