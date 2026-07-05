@@ -165,7 +165,7 @@
 }
 
 .hero-title {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: clamp(3.2rem, 8.5vw, 6.8rem);
   font-weight: 600;
   letter-spacing: -0.04em;
@@ -202,7 +202,7 @@
 .hero-cta-button {
   background-color: #d1b8fc;
   color: #000000;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 1.05rem;
   font-weight: 500;
   padding: 0.8rem 2.2rem;
@@ -250,7 +250,7 @@
 }
 
 .hero-meta-item {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: clamp(0.9rem, 2vw, 1.05rem);
   font-weight: 500;
   color: #8e8e93;
@@ -304,7 +304,7 @@
 
 /* About Section Styles */
 .about-section {
-  background-color: #ffffff;
+  background-color: #f4f5f6;
   color: #000000;
   padding: 8rem 4rem;
   width: 100%;
@@ -343,7 +343,7 @@
 }
 
 .about-label-text {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -357,7 +357,7 @@
 }
 
 .about-heading {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: clamp(2rem, 3.8vw, 3rem);
   font-weight: 500;
   line-height: 1.25;
@@ -388,7 +388,7 @@
 }
 
 .about-stat-number {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: clamp(3.2rem, 5.5vw, 4.5rem);
   font-weight: 700;
   color: #000000;
@@ -411,7 +411,7 @@
 }
 
 .about-stat-label {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
   color: #8e939e;
@@ -465,7 +465,7 @@
 
 /* Expect Section Styles */
 .expect-section {
-  background-color: #ffffff;
+  background-color: #f4f5f6;
   color: #000000;
   padding: 8rem 4rem;
   width: 100%;
@@ -513,7 +513,7 @@
 }
 
 .expect-label-text {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -521,7 +521,7 @@
 }
 
 .expect-title {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: clamp(2.5rem, 5.5vw, 4.5rem);
   font-weight: 600;
   letter-spacing: -0.04em;
@@ -536,7 +536,7 @@
 }
 
 .expect-subtitle {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -554,7 +554,7 @@
 
 .expect-card {
   position: relative;
-  background-color: #f7f8fa;
+  background-color: #eaeaea;
   border-radius: 20px;
   padding: 2.5rem 2rem;
   min-height: 380px;
@@ -575,7 +575,7 @@
 }
 
 .expect-card-title {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: clamp(1.4rem, 2.2vw, 1.8rem);
   font-weight: 600;
   line-height: 1.25;
@@ -589,14 +589,14 @@
 }
 
 .expect-card-number {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 0.95rem;
   font-weight: 700;
   color: #8b5cf6;
 }
 
 .expect-card-description {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 0.95rem;
   font-weight: 500;
   line-height: 1.6;
@@ -646,7 +646,7 @@
   justify-content: center;
   background-color: #ffffff;
   color: #000000;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 0.95rem;
   font-weight: 600;
   padding: 0.9rem 1.8rem;
@@ -718,7 +718,7 @@
 
 /* Sponsors Section Styles */
 .sponsors-section {
-  background-color: #ffffff;
+  background-color: #f4f5f6;
   color: #000000;
   padding: 8rem 4rem;
   width: 100%;
@@ -756,7 +756,7 @@
 }
 
 .sponsors-label-text {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -764,7 +764,7 @@
 }
 
 .sponsors-heading {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: clamp(2rem, 3.8vw, 2.8rem);
   font-weight: 500;
   line-height: 1.25;
@@ -787,7 +787,7 @@
 }
 
 .sponsors-all-link {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 0.95rem;
   font-weight: 700;
   color: #000000;
@@ -824,7 +824,7 @@
 
 .sponsor-card {
   position: relative;
-  background-color: #f7f8fa;
+  background-color: #eaeaea;
   border-radius: 20px;
   aspect-ratio: 1.1 / 1;
   display: flex;
@@ -849,7 +849,7 @@
 }
 
 .sponsor-name {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: clamp(1.15rem, 1.8vw, 1.45rem);
   font-weight: 700;
   color: #000000;
@@ -879,7 +879,7 @@
 }
 
 .sponsor-cta-title {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: clamp(1.4rem, 2.2vw, 1.8rem);
   font-weight: 700;
   line-height: 1.25;
@@ -895,7 +895,7 @@
   justify-content: center;
   background-color: #ffffff;
   color: #000000;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 0.95rem;
   font-weight: 600;
   padding: 0.9rem 1.8rem;
