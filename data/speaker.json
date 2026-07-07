@@ -1,50 +1,32 @@
 [
   {
-    "name": "Alina Chen",
-    "photoUrl": "/assets/speakers/alina.jpg",
-    "role": "Chairperson",
-    "committee": "UNGA (DISEC)"
+    "name": "XYZ",
+    "photoUrl": "",
+    "role": "XYZ",
+    "committee": "XYZ"
   },
   {
-    "name": "Sara Bloom",
-    "photoUrl": "/assets/speakers/sara.jpg",
-    "role": "President",
-    "committee": "UNSC"
+    "name": "XYZ",
+    "photoUrl": "",
+    "role": "XYZ",
+    "committee": "XYZ"
   },
   {
-    "name": "Jonas Richter",
-    "photoUrl": "/assets/speakers/jonas.jpg",
-    "role": "Speaker of the House",
-    "committee": "Lok Sabha"
+    "name": "XYZ",
+    "photoUrl": "",
+    "role": "XYZ",
+    "committee": "XYZ"
   },
   {
-    "name": "Ethan Cole",
-    "photoUrl": "/assets/speakers/ethan.jpg",
-    "role": "Moderator",
-    "committee": "AIPPM"
+    "name": "XYZ",
+    "photoUrl": "",
+    "role": "XYZ",
+    "committee": "XYZ"
   },
   {
-    "name": "Dr. Aarav Mehta",
-    "photoUrl": "/assets/speakers/aarav.jpg",
-    "role": "Executive Director",
-    "committee": "UNEP"
-  },
-  {
-    "name": "Vikram Singh",
-    "role": "Director",
-    "photoUrl": "/assets/speakers/vikram.jpg",
-    "committee": "HCC"
-  },
-  {
-    "name": "Priya Sharma",
-    "photoUrl": "/assets/speakers/priya.jpg",
-    "role": "High Commissioner",
-    "committee": "UNHRC"
-  },
-  {
-    "name": "Rohan Das",
-    "photoUrl": "/assets/speakers/rohan.jpg",
-    "role": "Editor-in-Chief",
-    "committee": "IP"
+    "name": "XYZ",
+    "photoUrl": "",
+    "role": "XYZ",
+    "committee": "XYZ"
   }
 ]

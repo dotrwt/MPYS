@@ -1,0 +1,223 @@
+/* Sponsors Page Styles */
+
+.sponsors-page-wrapper {
+  background-color: #ffffff !important;
+  color: #000000;
+  min-height: 100vh;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.sponsors-page-wrapper main {
+  background-color: #ffffff !important;
+}
+
+/* Light Theme Navbar Overrides */
+.sponsors-page-wrapper .navbar-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+  position: fixed;
+}
+
+.sponsors-page-wrapper .navbar-item {
+  color: #000000;
+  opacity: 0.9;
+}
+
+.sponsors-page-wrapper .navbar-item:hover {
+  opacity: 1;
+}
+
+.sponsors-page-wrapper .navbar-link[href="/sponsors"] {
+  color: #8b5cf6;
+  font-weight: 700;
+}
+
+.sponsors-page-wrapper .navbar-cta-arrow {
+  color: #8b5cf6;
+}
+
+/* Hero Section */
+.sponsors-hero-section {
+  padding: 10rem 4rem 4rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.sponsors-hero-title {
+  font-size: clamp(4.5rem, 10vw, 8.5rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+  color: #000000;
+  margin: 0;
+  transform: translateX(-0.04em);
+}
+
+/* Section Header */
+.sponsors-section-wrap {
+  padding: 0 4rem 8rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.sponsors-partners-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: start;
+  gap: 3rem;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.sponsors-label-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #000000;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+.sponsors-label-wavy {
+  color: #8b5cf6;
+  display: inline-flex;
+  align-items: center;
+}
+
+.sponsors-tagline {
+  font-size: clamp(1.8rem, 3.5vw, 2.3rem);
+  font-weight: 500;
+  line-height: 1.25;
+  color: #9ea1a6; /* Grey color for secondary text */
+  margin: 0;
+  letter-spacing: -0.03em;
+  max-width: 42rem;
+}
+
+.sponsors-tagline-highlight {
+  color: #111111; /* Black color for highlighted text */
+  font-weight: 700;
+}
+
+.sponsors-touch-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.sponsors-touch-link:hover {
+  opacity: 0.7;
+}
+
+.sponsors-touch-arrow {
+  color: #8b5cf6;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.sponsors-touch-link:hover .sponsors-touch-arrow {
+  transform: translateX(4px);
+}
+
+/* Grid Layout */
+.sponsors-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Card Design */
+.sponsor-card-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f4f6; /* Light grey */
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.sponsor-card-item:hover {
+  transform: translateY(-4px);
+  background-color: #e5e7eb;
+}
+
+.sponsor-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: #1f2937;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.sponsor-logo-svg {
+  color: #374151;
+  transition: color 0.3s ease;
+}
+
+.sponsor-card-item:hover .sponsor-logo-svg {
+  color: #111111;
+}
+
+/* Page footer override fix */
+.sponsors-page-wrapper footer {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .sponsors-grid-layout {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sponsors-partners-header {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .sponsors-touch-link {
+    justify-self: start;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsors-grid-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sponsors-hero-section {
+    padding: 9rem 2.5rem 3rem 2.5rem;
+  }
+  .sponsors-section-wrap {
+    padding: 0 2.5rem 6rem 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsors-grid-layout {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .sponsors-hero-section {
+    padding: 8rem 1.25rem 2rem 1.25rem;
+  }
+  .sponsors-section-wrap {
+    padding: 0 1.25rem 5rem 1.25rem;
+  }
+}
