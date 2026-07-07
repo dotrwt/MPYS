@@ -15,7 +15,7 @@ export default function Footer() {
                 {/* Top Row: Brand & Designer */}
                 <div className="footer-top-row">
                     <div className="footer-brand">Madhya Pradesh Youth Summit®</div>
-                    <div className="footer-designer">Designed by <a href="https://dotrwt.in" target="_blank" rel="noopener noreferrer">dotrwt</a></div>
+                    <div className="footer-designer">Developed by <a href="https://dotrwt.in" target="_blank" rel="noopener noreferrer">dotrwt</a></div>
                 </div>
 
                 {/* Center Call to Action */}
