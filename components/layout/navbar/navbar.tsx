@@ -11,7 +11,7 @@ export default function Navbar() {
                 <a href="/speakers" className="navbar-item navbar-link">
                     SPEAKERS
                 </a>
-                <a href="/#agenda" className="navbar-item navbar-link">
+                <a href="/agendas" className="navbar-item navbar-link">
                     AGENDA
                 </a>
                 <a href="/venue" className="navbar-item navbar-link">
@@ -19,6 +19,9 @@ export default function Navbar() {
                 </a>
                 <a href="/sponsors" className="navbar-item navbar-link">
                     SPONSORS
+                </a>
+                <a href="/contact" className="navbar-item navbar-link">
+                    CONTACT
                 </a>
                 <a href="/registration" className="navbar-item navbar-cta">
                     <span className="navbar-cta-arrow">→</span> Get tickets

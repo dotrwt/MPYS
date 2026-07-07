@@ -27,6 +27,11 @@
   opacity: 1;
 }
 
+.contact-page-wrapper .navbar-link[href="/contact"] {
+  color: #8b5cf6;
+  font-weight: 700;
+}
+
 .contact-page-wrapper .navbar-cta-arrow {
   color: #8b5cf6;
 }
