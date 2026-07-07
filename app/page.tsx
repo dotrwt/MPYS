@@ -4,6 +4,7 @@ import About from "@/components/home/about";
 import WhattoExpect from "@/components/home/WhattoExpect";
 import Speakers from "@/components/home/Speakers";
 import Agenda from "@/components/home/Agenda";
+import Registration from "@/components/home/Registration";
 import Sponsers from "@/components/home/Sponsers";
 import Footer from "@/components/layout/footer/footer";
 
@@ -27,6 +28,9 @@ export default function Home() {
 
       {/* Agenda Section */}
       <Agenda />
+
+      {/* Registration / Tickets Section */}
+      <Registration />
 
       {/* Sponsors Section */}
       <Sponsers />

@@ -27,14 +27,14 @@ export default function Agenda() {
   return (
     <section className="agenda-section" id="agenda">
       <div className="agenda-container">
-        
+
         {/* Header Block matching the design layout */}
         <div className="agenda-header-wrapper">
           <ScrollReveal className="agenda-header-left">
             <span className="agenda-date">
               <span className="agenda-date-squiggle">
                 <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 3.5C2.5 3.5 3 1.5 4.5 1.5C6 1.5 6.5 4.5 8 4.5C9.5 4.5 10.5 2.5 11.5 2.5C12 2.5 12.5 3 13 3.5" stroke="#8b5cf6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M1 3.5C2.5 3.5 3 1.5 4.5 1.5C6 1.5 6.5 4.5 8 4.5C9.5 4.5 10.5 2.5 11.5 2.5C12 2.5 12.5 3 13 3.5" stroke="#8b5cf6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </span>
               MAY 15-17, 2025
@@ -42,7 +42,7 @@ export default function Agenda() {
             <h2 className="agenda-main-title">Agenda</h2>
           </ScrollReveal>
           <ScrollReveal className="agenda-header-right" delay={100}>
-            <span className="agenda-tagline">Think Forward®</span>
+            <span className="agenda-tagline">Madhya Pradesh Youth Summit®</span>
           </ScrollReveal>
         </div>
 
@@ -63,7 +63,7 @@ export default function Agenda() {
 
         {/* Committee Display Layout */}
         <div className="committee-display" key={activeTab}>
-          
+
           {/* Logo Column */}
           <div className="committee-logo-col">
             <div className="committee-emblem-wrap">
@@ -84,8 +84,8 @@ export default function Agenda() {
                 ) : null}
 
                 {/* Dotted emblem ring and text fallback */}
-                <div 
-                  className="committee-emblem-fallback" 
+                <div
+                  className="committee-emblem-fallback"
                   style={{ display: currentCommittee.logoUrl ? "none" : "flex" }}
                 >
                   <svg className="committee-emblem-svg" viewBox="0 0 100 100">
@@ -95,30 +95,30 @@ export default function Agenda() {
                         <stop offset="100%" stopColor="#8b5cf6" />
                       </linearGradient>
                     </defs>
-                    <circle 
-                      cx="50" 
-                      cy="50" 
-                      r="44" 
-                      fill="none" 
-                      stroke={`url(#grad-${currentCommittee.id})`} 
-                      strokeWidth="1.5" 
-                      strokeDasharray="6 4" 
+                    <circle
+                      cx="50"
+                      cy="50"
+                      r="44"
+                      fill="none"
+                      stroke={`url(#grad-${currentCommittee.id})`}
+                      strokeWidth="1.5"
+                      strokeDasharray="6 4"
                     />
-                    <circle 
-                      cx="50" 
-                      cy="50" 
-                      r="37" 
-                      fill="rgba(209, 184, 252, 0.03)" 
-                      stroke="rgba(255, 255, 255, 0.08)" 
-                      strokeWidth="1" 
+                    <circle
+                      cx="50"
+                      cy="50"
+                      r="37"
+                      fill="rgba(209, 184, 252, 0.03)"
+                      stroke="rgba(255, 255, 255, 0.08)"
+                      strokeWidth="1"
                     />
-                    <text 
-                      x="50" 
-                      y="55" 
-                      fill="#ffffff" 
-                      fontSize="14" 
-                      fontWeight="bold" 
-                      textAnchor="middle" 
+                    <text
+                      x="50"
+                      y="55"
+                      fill="#ffffff"
+                      fontSize="14"
+                      fontWeight="bold"
+                      textAnchor="middle"
                       letterSpacing="0.5"
                     >
                       {currentCommittee.name.split(" ").map(n => n[0]).join("").slice(0, 4).toUpperCase() || currentCommittee.name.slice(0, 3).toUpperCase()}
@@ -135,7 +135,7 @@ export default function Agenda() {
             <div className="committee-badge">
               <span className="committee-badge-squiggle">
                 <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 3.5C2.5 3.5 3 1.5 4.5 1.5C6 1.5 6.5 4.5 8 4.5C9.5 4.5 10.5 2.5 11.5 2.5C12 2.5 12.5 3 13 3.5" stroke="#8b5cf6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M1 3.5C2.5 3.5 3 1.5 4.5 1.5C6 1.5 6.5 4.5 8 4.5C9.5 4.5 10.5 2.5 11.5 2.5C12 2.5 12.5 3 13 3.5" stroke="#8b5cf6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </span>
               <span className="committee-badge-name">{currentCommittee.fullName}</span>
