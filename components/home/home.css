@@ -1908,4 +1908,48 @@
   margin: 0;
 }
 
+/* Responsiveness for Pricing Section */
+@media (max-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-section {
+    padding: 6rem 2rem;
+  }
+  
+  .pricing-container {
+    gap: 3rem;
+  }
+
+  .pricing-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+
+  .pricing-header-right {
+    max-width: 100%;
+    padding-bottom: 0;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .pricing-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-section {
+    padding: 5rem 1.25rem;
+  }
+}
+
+
 
