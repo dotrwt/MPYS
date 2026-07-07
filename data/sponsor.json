@@ -1,0 +1,57 @@
+[
+  {
+    "id": "globalbank",
+    "name": "GlobalBank",
+    "tier": "cornerstone"
+  },
+  {
+    "id": "cubekit",
+    "name": "Cubekit",
+    "tier": "cornerstone"
+  },
+  {
+    "id": "flora-fauna",
+    "name": "Flora&Fauna",
+    "tier": "cornerstone"
+  },
+  {
+    "id": "euphoria",
+    "name": "Euphoria",
+    "tier": "cornerstone"
+  },
+  {
+    "id": "eclipseful",
+    "name": "Eclipseful",
+    "tier": "partner"
+  },
+  {
+    "id": "quantum",
+    "name": "Quantum²",
+    "tier": "partner"
+  },
+  {
+    "id": "pollinate",
+    "name": "Pollinate",
+    "tier": "partner"
+  },
+  {
+    "id": "lightbox",
+    "name": "Lightbox",
+    "tier": "partner"
+  },
+  {
+    "id": "launchsimple",
+    "name": "LaunchSimple",
+    "tier": "partner"
+  },
+  {
+    "id": "ikigai",
+    "name": "Ikigai Labs",
+    "tier": "partner"
+  },
+  {
+    "id": "contrast",
+    "name": "ContrastAI",
+    "tier": "partner"
+  }
+]

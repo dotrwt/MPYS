@@ -1,0 +1,201 @@
+/* Venue Page Styles */
+
+.venue-page-wrapper {
+  background-color: #ffffff !important;
+  color: #000000;
+  min-height: 100vh;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.venue-page-wrapper main {
+  background-color: #ffffff !important;
+}
+
+/* Light Theme Navbar Overrides */
+.venue-page-wrapper .navbar-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+  position: fixed;
+}
+
+.venue-page-wrapper .navbar-item {
+  color: #000000;
+  opacity: 0.9;
+}
+
+.venue-page-wrapper .navbar-item:hover {
+  opacity: 1;
+}
+
+.venue-page-wrapper .navbar-link[href="/venue"] {
+  color: #8b5cf6;
+  font-weight: 700;
+}
+
+.venue-page-wrapper .navbar-cta-arrow {
+  color: #8b5cf6;
+}
+
+/* Hero Section */
+.venue-hero-section {
+  padding: 10rem 4rem 3rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.venue-hero-title {
+  font-size: clamp(4.5rem, 10vw, 8.5rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+  color: #000000;
+  margin: 0;
+  transform: translateX(-0.04em);
+}
+
+/* Main Content Section */
+.venue-content-section {
+  padding: 0 4rem 8rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Banner Frame */
+.venue-banner-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 5rem;
+  background-color: #1a1a1a;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.venue-banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.08) brightness(0.9);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
+}
+
+.venue-banner-container:hover .venue-banner-image {
+  transform: scale(1.03);
+  filter: grayscale(100%) contrast(1.12) brightness(0.95);
+}
+
+/* Coordinates Badge Overlay */
+.venue-coordinates-badge {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  z-index: 10;
+  color: #ffffff;
+  max-width: 320px;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+.venue-badge-title {
+  font-size: clamp(1.25rem, 2.5vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 0.25rem 0;
+  letter-spacing: -0.02em;
+}
+
+.venue-badge-sub {
+  font-size: clamp(0.95rem, 2vw, 1.35rem);
+  font-weight: 500;
+  opacity: 0.85;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+/* Grid layout for details */
+.venue-details-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4rem;
+  align-items: start;
+  width: 100%;
+}
+
+.venue-label-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #000000;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+.venue-label-wavy {
+  color: #8b5cf6;
+  display: inline-flex;
+  align-items: center;
+}
+
+.venue-description-tagline {
+  font-size: clamp(1.8rem, 3.5vw, 2.3rem);
+  font-weight: 500;
+  line-height: 1.28;
+  color: #9ea1a6;
+  margin: 0;
+  letter-spacing: -0.03em;
+  max-width: 48rem;
+}
+
+.venue-description-highlight {
+  color: #111111;
+  font-weight: 700;
+}
+
+/* Page footer override fix */
+.venue-page-wrapper footer {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .venue-details-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .venue-banner-container {
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .venue-hero-section {
+    padding: 9rem 2.5rem 2rem 2.5rem;
+  }
+  .venue-content-section {
+    padding: 0 2.5rem 6rem 2.5rem;
+  }
+  .venue-coordinates-badge {
+    top: 2rem;
+    left: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .venue-hero-section {
+    padding: 8rem 1.25rem 1.5rem 1.25rem;
+  }
+  .venue-content-section {
+    padding: 0 1.25rem 5rem 1.25rem;
+  }
+  .venue-coordinates-badge {
+    top: 1.25rem;
+    left: 1.25rem;
+  }
+}
