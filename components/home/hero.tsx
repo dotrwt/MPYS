@@ -46,24 +46,13 @@ export default function Hero() {
                     willChange: "transform, opacity"
                 }}
             >
-                {/* Top: Lavender Squiggle Icon */}
+                {/* Top: Official Logo */}
                 <div className="hero-top-icon">
-                    <svg
-                        width="28"
-                        height="12"
-                        viewBox="0 0 28 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="hero-squiggle"
-                    >
-                        <path
-                            d="M2 6C5 3 7 3 10 6C13 9 15 9 18 6C21 3 23 3 26 6"
-                            stroke="#d1b8fc"
-                            strokeWidth="3"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                    </svg>
+                    <img
+                        src="/MPYS_T.png"
+                        alt="Madhya Pradesh Youth Summit Logo"
+                        className="hero-logo"
+                    />
                 </div>
 
                 {/* Center: Main Title & CTA */}

@@ -82,6 +82,43 @@
 
 /* Brand Specific Override (if any, keeping same size) */
 .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navbar-logo {
+  height: 2.2rem;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.navbar-brand-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    height: 1.8rem;
+  }
+  .navbar-brand-text {
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar-logo {
+    height: 1.6rem;
+  }
+  .navbar-brand-text {
+    font-size: 0.65rem;
+    letter-spacing: 0.03em;
+  }
 }
 
 /* Center Links Specific Styling */

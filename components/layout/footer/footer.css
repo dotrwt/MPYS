@@ -102,6 +102,30 @@
   font-weight: 600;
   letter-spacing: -0.01em;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-logo {
+  height: 2.2rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-brand-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .footer-brand-text {
+    font-size: 0.85rem;
+  }
+  .footer-logo {
+    height: 1.8rem;
+  }
 }
 
 .footer-designer {
