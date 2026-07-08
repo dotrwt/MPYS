@@ -1,5 +1,6 @@
 import Navbar from "@/components/layout/navbar/navbar";
 import Hero from "@/components/home/hero";
+import Counter from "@/components/home/counter";
 import About from "@/components/home/about";
 import WhattoExpect from "@/components/home/WhattoExpect";
 import Speakers from "@/components/home/Speakers";
@@ -16,6 +17,9 @@ export default function Home() {
 
       {/* Hero Section */}
       <Hero />
+
+      {/* Global Countdown Counter Section */}
+      <Counter />
 
       {/* About Section */}
       <About />

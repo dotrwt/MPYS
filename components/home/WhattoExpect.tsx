@@ -14,14 +14,14 @@ export default function WhattoExpect() {
             <div className="expect-label">
               <span className="expect-label-squiggle">
                 <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 3.5C2.5 3.5 3 1.5 4.5 1.5C6 1.5 6.5 4.5 8 4.5C9.5 4.5 10.5 2.5 11.5 2.5C12 2.5 12.5 3 13 3.5" stroke="#8b5cf6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M1 3.5C2.5 3.5 3 1.5 4.5 1.5C6 1.5 6.5 4.5 8 4.5C9.5 4.5 10.5 2.5 11.5 2.5C12 2.5 12.5 3 13 3.5" stroke="#8b5cf6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </span>
               <span className="expect-label-text">WHAT'S ON</span>
             </div>
             <h2 className="expect-title">What to expect</h2>
           </ScrollReveal>
-          
+
           <ScrollReveal className="expect-header-right" delay={100}>
             <p className="expect-subtitle">
               Join us for a two-day youth assembly designed to spark policy discussions, forge diplomatic ties, and shape tomorrow's leadership.
@@ -68,16 +68,16 @@ export default function WhattoExpect() {
           <ScrollReveal className="expect-card expect-card-cta" delay={300}>
             {/* Ambient background glow */}
             <div className="expect-card-glow" />
-            
+
             <div className="expect-card-top">
               <h3 className="expect-card-title text-white">Want to be involved?</h3>
               <span className="expect-card-squiggle">
                 <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 3.5C2.5 3.5 3 1.5 4.5 1.5C6 1.5 6.5 4.5 8 4.5C9.5 4.5 10.5 2.5 11.5 2.5C12 2.5 12.5 3 13 3.5" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" strokeOpacity="0.4"/>
+                  <path d="M1 3.5C2.5 3.5 3 1.5 4.5 1.5C6 1.5 6.5 4.5 8 4.5C9.5 4.5 10.5 2.5 11.5 2.5C12 2.5 12.5 3 13 3.5" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" strokeOpacity="0.4" />
                 </svg>
               </span>
             </div>
-            
+
             <div className="expect-card-bottom">
               <a href="/contact" className="expect-cta-button">
                 <span className="expect-cta-arrow">→</span> Get in touch

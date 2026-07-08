@@ -15,7 +15,8 @@
 .speakers-page-wrapper .navbar-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   background-color: #ffffff;
-  position: fixed; /* Fix it to the top */
+  position: fixed;
+  /* Fix it to the top */
 }
 
 .speakers-page-wrapper .navbar-item {
@@ -29,7 +30,8 @@
 
 .speakers-page-wrapper .navbar-link[href="/speakers"],
 .speakers-page-wrapper .navbar-link[href="#speakers"] {
-  color: #8b5cf6; /* Active style matching purple in mockup */
+  color: #8b5cf6;
+  /* Active style matching purple in mockup */
   font-weight: 700;
 }
 
@@ -52,7 +54,8 @@
   line-height: 0.9;
   color: #000000;
   margin: 0;
-  transform: translateX(-0.04em); /* Align slightly to the left margin */
+  transform: translateX(-0.04em);
+  /* Align slightly to the left margin */
 }
 
 /* Main Section */
@@ -147,13 +150,15 @@
   height: 100%;
   object-fit: cover;
   filter: grayscale(100%);
-  z-index: 2; /* Render on top of fallback initials */
+  z-index: 2;
+  /* Render on top of fallback initials */
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
 }
 
 .speakers-card-item:hover .speakers-card-image {
   transform: scale(1.03);
-  filter: grayscale(0%); /* Restore color on hover */
+  filter: grayscale(0%);
+  /* Restore color on hover */
 }
 
 /* Fallback Avatar Placeholder */
@@ -169,7 +174,8 @@
   justify-content: center;
   background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
   color: #9ca3af;
-  z-index: 1; /* Render behind loaded images */
+  z-index: 1;
+  /* Render behind loaded images */
 }
 
 .speakers-avatar-icon-svg {
@@ -232,6 +238,7 @@
   .speakers-hero {
     padding: 9rem 2.5rem 3rem 2.5rem;
   }
+
   .speakers-section-wrap {
     padding: 0 2.5rem 6rem 2.5rem;
   }
@@ -241,7 +248,7 @@
   .speakers-grid-layout {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .speakers-hero-title {
     font-size: clamp(3.5rem, 8vw, 5.5rem);
   }
@@ -253,7 +260,7 @@
     max-width: 320px;
     margin: 0 auto;
   }
-  
+
   .speakers-section-header {
     margin-bottom: 2rem;
   }
@@ -261,6 +268,7 @@
   .speakers-hero {
     padding: 8rem 1.25rem 2rem 1.25rem;
   }
+
   .speakers-section-wrap {
     padding: 0 1.25rem 5rem 1.25rem;
   }

@@ -24,21 +24,21 @@ export default function Hero() {
     return (
         <section className="hero-container">
             {/* Dynamic Animated Background Blobs with parallax scrolling (translating down relative to container) */}
-            <div 
-                className="hero-glow-blob-1" 
+            <div
+                className="hero-glow-blob-1"
                 style={{ transform: `translate3d(0, ${scrollY * 0.45}px, 0)`, willChange: "transform" }}
             />
-            <div 
-                className="hero-glow-blob-2" 
+            <div
+                className="hero-glow-blob-2"
                 style={{ transform: `translate3d(0, ${scrollY * 0.55}px, 0)`, willChange: "transform" }}
             />
-            <div 
-                className="hero-glow-blob-3" 
+            <div
+                className="hero-glow-blob-3"
                 style={{ transform: `translate3d(0, ${scrollY * 0.35}px, 0)`, willChange: "transform" }}
             />
             <div className="hero-grain" />
 
-            <div 
+            <div
                 className="hero-content"
                 style={{
                     transform: `translate3d(0, ${contentTranslate}px, 0)`,

@@ -75,14 +75,17 @@
     transform: translate(0, 0) rotate(0deg) scale(1);
     border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
   }
+
   33% {
     transform: translate(8%, 12%) rotate(120deg) scale(1.15);
     border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
   }
+
   66% {
     transform: translate(-5%, 18%) rotate(240deg) scale(0.9);
     border-radius: 35% 65% 45% 55% / 45% 40% 60% 55%;
   }
+
   100% {
     transform: translate(0, 0) rotate(360deg) scale(1);
     border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
@@ -94,14 +97,17 @@
     transform: translate(0, 0) rotate(0deg) scale(1);
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
+
   33% {
     transform: translate(-10%, 8%) rotate(-120deg) scale(0.9);
     border-radius: 45% 55% 60% 40% / 40% 55% 45% 60%;
   }
+
   66% {
     transform: translate(5%, -12%) rotate(-240deg) scale(1.15);
     border-radius: 50% 50% 35% 65% / 55% 45% 65% 35%;
   }
+
   100% {
     transform: translate(0, 0) rotate(-360deg) scale(1);
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -113,14 +119,17 @@
     transform: translate(0, 0) rotate(0deg) scale(1);
     border-radius: 50% 50% 40% 60% / 40% 60% 50% 50%;
   }
+
   33% {
     transform: translate(12%, -15%) rotate(120deg) scale(1.1);
     border-radius: 45% 55% 60% 40% / 50% 45% 55% 50%;
   }
+
   66% {
     transform: translate(-10%, 5%) rotate(240deg) scale(0.95);
     border-radius: 60% 40% 45% 55% / 40% 60% 45% 55%;
   }
+
   100% {
     transform: translate(0, 0) rotate(360deg) scale(1);
     border-radius: 50% 50% 40% 60% / 40% 60% 50% 50%;
@@ -133,6 +142,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -144,6 +154,7 @@
     opacity: 0;
     transform: translateY(12px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -316,7 +327,7 @@
   .hero-title {
     font-size: 2.8rem;
   }
-  
+
   .hero-bottom-row {
     flex-direction: column;
     gap: 0.6rem;
@@ -326,7 +337,7 @@
   .hero-meta-item {
     text-align: center;
   }
-  
+
   .hero-cta-button {
     width: 100%;
     justify-content: center;
@@ -338,13 +349,8 @@
 .about-section {
   background-color: #f4f5f6;
   color: #000000;
-  padding: 8rem 4rem;
+  padding: 8rem 4rem 4rem 4rem;
   width: 100%;
-  min-height: 100vh;
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   box-sizing: border-box;
 }
 
@@ -453,9 +459,9 @@
 /* About Responsive Adjustments */
 @media (max-width: 900px) {
   .about-section {
-    padding: 6rem 2.5rem;
+    padding: 6rem 2.5rem 3rem 2.5rem;
   }
-  
+
   .about-row {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -473,7 +479,7 @@
 
 @media (max-width: 600px) {
   .about-section {
-    padding: 5rem 1.5rem;
+    padding: 5rem 1.5rem 2.5rem 1.5rem;
   }
 
   .about-row {
@@ -499,13 +505,8 @@
 .expect-section {
   background-color: #f4f5f6;
   color: #000000;
-  padding: 8rem 4rem;
+  padding: 4rem 4rem;
   width: 100%;
-  min-height: 100vh;
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   box-sizing: border-box;
 }
 
@@ -719,7 +720,7 @@
 
 @media (max-width: 900px) {
   .expect-section {
-    padding: 6rem 2.5rem;
+    padding: 3rem 2.5rem;
   }
 
   .expect-header {
@@ -735,7 +736,7 @@
 
 @media (max-width: 600px) {
   .expect-section {
-    padding: 5rem 1.5rem;
+    padding: 2.5rem 1.5rem;
   }
 
   .expect-grid {
@@ -752,7 +753,7 @@
 .sponsors-section {
   background-color: #f4f5f6;
   color: #000000;
-  padding: 8rem 4rem;
+  padding: 4rem 4rem 8rem 4rem;
   width: 100%;
   box-sizing: border-box;
 }
@@ -967,7 +968,7 @@
 
 @media (max-width: 900px) {
   .sponsors-section {
-    padding: 6rem 2.5rem;
+    padding: 3rem 2.5rem 6rem 2.5rem;
   }
 
   .sponsors-header {
@@ -984,7 +985,7 @@
 
 @media (max-width: 600px) {
   .sponsors-section {
-    padding: 5rem 1.5rem;
+    padding: 2.5rem 1.5rem 5rem 1.5rem;
   }
 
   .sponsors-grid {
@@ -1001,13 +1002,8 @@
 .speakers-section {
   background-color: #f4f5f6;
   color: #000000;
-  padding: 8rem 4rem;
+  padding: 4rem 4rem 8rem 4rem;
   width: 100%;
-  min-height: 100vh;
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   box-sizing: border-box;
 }
 
@@ -1144,7 +1140,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(0,0,0,0.02) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.02) 100%);
   pointer-events: none;
 }
 
@@ -1205,24 +1201,24 @@
 /* Responsiveness */
 @media (max-width: 900px) {
   .speakers-section {
-    padding: 6rem 2.5rem;
+    padding: 3rem 2.5rem 6rem 2.5rem;
   }
-  
+
   .speakers-row {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  
+
   .speakers-info-col {
     position: static;
     max-width: 100%;
     gap: 1.2rem;
   }
-  
+
   .speakers-subtitle {
     max-width: 100%;
   }
-  
+
   .speakers-grid {
     gap: 2.5rem 1.5rem;
   }
@@ -1230,16 +1226,15 @@
 
 @media (max-width: 600px) {
   .speakers-section {
-    padding: 5rem 1.5rem;
+    padding: 2.5rem 1.5rem 5rem 1.5rem;
   }
-  
+
   .speakers-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
-  
-  .speaker-image-placeholder {
-  }
+
+  .speaker-image-placeholder {}
 }
 
 /* Agenda Section Styles */
@@ -1328,11 +1323,13 @@
   gap: 0.6rem;
   overflow-x: auto;
   padding-bottom: 0.5rem;
-  scrollbar-width: none; /* Hide standard Firefox scrollbar */
+  scrollbar-width: none;
+  /* Hide standard Firefox scrollbar */
 }
 
 .committee-tabs::-webkit-scrollbar {
-  display: none; /* Hide Chrome/Safari scrollbar */
+  display: none;
+  /* Hide Chrome/Safari scrollbar */
 }
 
 .committee-tab-btn {
@@ -1588,7 +1585,8 @@
   }
 
   .agenda-header-right {
-    display: none; /* Hide tagline on tiny viewports */
+    display: none;
+    /* Hide tagline on tiny viewports */
   }
 
   .agenda-main-title {
@@ -1610,9 +1608,10 @@
 
 /* Pricing Section Styles */
 .pricing-section {
-  background-color: #f4f5f6; /* Alternating section: light background */
+  background-color: #f4f5f6;
+  /* Alternating section: light background */
   color: #000000;
-  padding: 8rem 4rem;
+  padding: 8rem 4rem 4rem 4rem;
   width: 100%;
   box-sizing: border-box;
 }
@@ -1917,9 +1916,9 @@
 
 @media (max-width: 768px) {
   .pricing-section {
-    padding: 6rem 2rem;
+    padding: 6rem 2rem 3rem 2rem;
   }
-  
+
   .pricing-container {
     gap: 3rem;
   }
@@ -1947,9 +1946,151 @@
 
 @media (max-width: 480px) {
   .pricing-section {
-    padding: 5rem 1.25rem;
+    padding: 5rem 1.25rem 2.5rem 1.25rem;
   }
 }
 
+/* Countdown Section Styles */
+.countdown-section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5rem 4rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
 
+.countdown-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
 
+.countdown-title {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #d1b8fc;
+  margin: 0;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+
+.countdown-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.countdown-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  min-width: 110px;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.countdown-card:hover {
+  border-color: rgba(209, 184, 252, 0.2);
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-2px);
+}
+
+.countdown-value {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.countdown-label {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #8e939e;
+  letter-spacing: 0.08em;
+  margin-top: 0.5rem;
+}
+
+.countdown-colon {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .countdown-section {
+    padding: 4rem 2rem;
+  }
+
+  .countdown-grid {
+    gap: 0.8rem;
+  }
+
+  .countdown-card {
+    min-width: 80px;
+    padding: 1rem 0.75rem;
+    border-radius: 8px;
+  }
+
+  .countdown-value {
+    font-size: 2rem;
+  }
+
+  .countdown-label {
+    font-size: 0.6rem;
+  }
+
+  .countdown-colon {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-section {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .countdown-grid {
+    gap: 0.5rem;
+  }
+
+  .countdown-card {
+    min-width: 70px;
+    padding: 0.75rem 0.5rem;
+  }
+
+  .countdown-value {
+    font-size: 1.6rem;
+  }
+
+  .countdown-label {
+    font-size: 0.55rem;
+  }
+
+  .countdown-colon {
+    display: none;
+  }
+}

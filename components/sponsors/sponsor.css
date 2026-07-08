@@ -93,14 +93,16 @@
   font-size: clamp(1.8rem, 3.5vw, 2.3rem);
   font-weight: 500;
   line-height: 1.25;
-  color: #9ea1a6; /* Grey color for secondary text */
+  color: #9ea1a6;
+  /* Grey color for secondary text */
   margin: 0;
   letter-spacing: -0.03em;
   max-width: 42rem;
 }
 
 .sponsors-tagline-highlight {
-  color: #111111; /* Black color for highlighted text */
+  color: #111111;
+  /* Black color for highlighted text */
   font-weight: 700;
 }
 
@@ -144,7 +146,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f3f4f6; /* Light grey */
+  background-color: #f3f4f6;
+  /* Light grey */
   aspect-ratio: 4 / 3;
   border-radius: 12px;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
@@ -186,10 +189,12 @@
   .sponsors-grid-layout {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .sponsors-partners-header {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+
   .sponsors-touch-link {
     justify-self: start;
     margin-top: 0;
@@ -200,9 +205,11 @@
   .sponsors-grid-layout {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .sponsors-hero-section {
     padding: 9rem 2.5rem 3rem 2.5rem;
   }
+
   .sponsors-section-wrap {
     padding: 0 2.5rem 6rem 2.5rem;
   }
@@ -214,9 +221,11 @@
     max-width: 320px;
     margin: 0 auto;
   }
+
   .sponsors-hero-section {
     padding: 8rem 1.25rem 2rem 1.25rem;
   }
+
   .sponsors-section-wrap {
     padding: 0 1.25rem 5rem 1.25rem;
   }
