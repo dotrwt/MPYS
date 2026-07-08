@@ -1,17 +1,53 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./navbar.css";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
+    const [isAtTop, setIsAtTop] = useState(true);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    useEffect(() => {
+        if (typeof window === "undefined") return;
+
+        let lastScrollY = window.scrollY;
+
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            // Determine if we're near the top of the page
+            setIsAtTop(currentScrollY <= 50);
+
+            // Calculate change in scroll
+            const scrollDifference = currentScrollY - lastScrollY;
+
+            if (currentScrollY <= 50) {
+                setIsVisible(true);
+            } else if (Math.abs(scrollDifference) > 25) {
+                // If scrolling down, hide; if scrolling up, show
+                setIsVisible(scrollDifference < 0);
+                lastScrollY = currentScrollY;
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    // Navbar is visible if scroll state shows it, or if mobile menu drawer is open
+    const isNavbarVisible = isVisible || isMenuOpen;
+
     return (
-        <header className={`navbar-header ${isMenuOpen ? "menu-open" : ""}`}>
+        <header
+            className={`navbar-header ${isMenuOpen ? "menu-open" : ""} ${
+                !isNavbarVisible ? "navbar-hidden" : ""
+            } ${!isAtTop ? "navbar-scrolled" : ""}`}
+        >
             <div className="navbar-container">
                 <a href="/" className="navbar-item navbar-brand">
                     Madhya Pradesh Youth Summit®
