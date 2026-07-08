@@ -5,11 +5,11 @@ import "./venue.css";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function VenueDetails() {
-  const [imageSrc, setImageSrc] = useState("/assets/venue/venue.jpg");
+  const [imageSrc, setImageSrc] = useState("https://res.cloudinary.com/dph28qrrx/image/upload/v1783495724/ITM_q4jmfc.png");
 
   const handleImageError = () => {
     // If the local file doesn't exist yet, fall back to a high-quality modern grayscale architectural image
-    setImageSrc("https://findmycollege.com/colleges/itm-university-gwalior-55287/gallery");
+    setImageSrc("https://res.cloudinary.com/dph28qrrx/image/upload/v1783495724/ITM_q4jmfc.png");
   };
 
   return (
