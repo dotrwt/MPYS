@@ -12,6 +12,8 @@ export default function ContactForm() {
     message: ""
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -21,20 +23,43 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
       alert("Please fill in all required fields.");
       return;
     }
-    // Simulate submission
-    setSubmitted(true);
+
+    setIsSubmitting(true);
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setSubmitted(true);
+      } else {
+        setErrorMessage(data.error || "Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      setErrorMessage("An unexpected error occurred. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <section className="contact-grid-section">
       <div className="contact-grid-container">
-        
+
         {/* Left Column: Tagline & Details */}
         <div className="contact-left-col">
           <ScrollReveal delay={100}>
@@ -104,7 +129,7 @@ export default function ContactForm() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="jane@framer.com"
+                    placeholder="test@example.com"
                     required
                     className="contact-form-input"
                   />
@@ -169,10 +194,15 @@ export default function ContactForm() {
                 </div>
 
                 {/* Submit button */}
-                <button type="submit" className="contact-submit-btn">
+                <button type="submit" className="contact-submit-btn" disabled={isSubmitting}>
                   <span>→</span>
-                  <span>Submit</span>
+                  <span>{isSubmitting ? "Sending..." : "Submit"}</span>
                 </button>
+                {errorMessage && (
+                  <p style={{ color: "#ef4444", marginTop: "1rem", fontSize: "0.875rem", textAlign: "left" }}>
+                    {errorMessage}
+                  </p>
+                )}
               </form>
             )}
           </ScrollReveal>
