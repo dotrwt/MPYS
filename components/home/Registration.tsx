@@ -86,7 +86,7 @@ export default function Registration({ isDarkTheme = false }: { isDarkTheme?: bo
             </div>
             <h2 className={`pricing-title ${isDarkTheme ? "text-light" : ""}`}>Get tickets</h2>
           </ScrollReveal>
-          
+
           <ScrollReveal className="pricing-header-right" delay={100}>
             <p className="pricing-subtitle">
               Secure your participation at the MP Youth Summit 2026. Register early to benefit from special rates.
@@ -97,8 +97,8 @@ export default function Registration({ isDarkTheme = false }: { isDarkTheme?: bo
         {/* Pricing Cards Grid */}
         <div className="pricing-grid">
           {TICKET_OPTIONS.map((option, idx) => (
-            <ScrollReveal 
-              key={option.id} 
+            <ScrollReveal
+              key={option.id}
               className={`pricing-card ${option.isFeatured ? "featured" : ""}`}
               delay={idx * 100}
             >
@@ -114,7 +114,7 @@ export default function Registration({ isDarkTheme = false }: { isDarkTheme?: bo
                     </div>
                   )}
                 </div>
-                
+
                 <div className="pricing-price-wrap">
                   <span className="pricing-price">{option.price}</span>
                   <span className="pricing-original-price">{option.originalPrice}</span>
@@ -124,13 +124,13 @@ export default function Registration({ isDarkTheme = false }: { isDarkTheme?: bo
               {/* Card Body */}
               <div className="pricing-card-body">
                 <p className="pricing-card-description">{option.description}</p>
-                
+
                 <ul className="pricing-features-list">
                   {option.features.map((feature, fIdx) => (
                     <li key={fIdx} className="pricing-feature-item">
                       <span className="pricing-feature-icon">
                         <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1 3.5C2.5 3.5 3 1.5 4.5 1.5C6 1.5 6.5 4.5 8 4.5C9.5 4.5 10.5 2.5 11.5 2.5C12 2.5 12.5 3 13 3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                          <path d="M1 3.5C2.5 3.5 3 1.5 4.5 1.5C6 1.5 6.5 4.5 8 4.5C9.5 4.5 10.5 2.5 11.5 2.5C12 2.5 12.5 3 13 3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                       </span>
                       <span>{feature}</span>
@@ -141,7 +141,7 @@ export default function Registration({ isDarkTheme = false }: { isDarkTheme?: bo
 
               {/* Card Footer / Action */}
               <div className="pricing-card-action-wrap">
-                <a 
+                <a
                   href={option.formUrl}
                   target="_blank"
                   rel="noopener noreferrer"

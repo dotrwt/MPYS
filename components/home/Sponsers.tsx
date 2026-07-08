@@ -76,7 +76,7 @@ export default function Sponsers() {
           <ScrollReveal className="sponsors-header-left" delay={0}>
             <span className="sponsors-label-squiggle">
               <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 3.5C2.5 3.5 3 1.5 4.5 1.5C6 1.5 6.5 4.5 8 4.5C9.5 4.5 10.5 2.5 11.5 2.5C12 2.5 12.5 3 13 3.5" stroke="#8b5cf6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M1 3.5C2.5 3.5 3 1.5 4.5 1.5C6 1.5 6.5 4.5 8 4.5C9.5 4.5 10.5 2.5 11.5 2.5C12 2.5 12.5 3 13 3.5" stroke="#8b5cf6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </span>
             <span className="sponsors-label-text">SPONSORS</span>
@@ -116,9 +116,9 @@ export default function Sponsers() {
           <ScrollReveal className="sponsor-card sponsor-card-cta" delay={(HOME_SPONSORS.length % 4) * 100}>
             {/* Ambient background glow */}
             <div className="sponsor-card-glow" />
-            
+
             <h3 className="sponsor-cta-title">Become a sponsor</h3>
-            
+
             <a href="/contact" className="sponsor-cta-button">
               <span className="sponsor-cta-arrow">→</span> Get in touch
             </a>

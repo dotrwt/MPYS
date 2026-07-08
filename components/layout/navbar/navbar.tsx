@@ -16,7 +16,7 @@ export default function Navbar() {
                 <a href="/" className="navbar-item navbar-brand">
                     Madhya Pradesh Youth Summit®
                 </a>
-                
+
                 {/* Desktop navigation links */}
                 <div className="navbar-links-desktop">
                     <a href="/speakers" className="navbar-item navbar-link">
@@ -43,9 +43,9 @@ export default function Navbar() {
                 </div>
 
                 {/* Mobile hamburger menu toggle */}
-                <button 
-                    className="navbar-mobile-toggle" 
-                    onClick={toggleMenu} 
+                <button
+                    className="navbar-mobile-toggle"
+                    onClick={toggleMenu}
                     aria-label="Toggle Menu"
                 >
                     <span className={`hamburger-line ${isMenuOpen ? "open-top" : ""}`}></span>

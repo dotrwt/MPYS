@@ -169,6 +169,7 @@
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+
   .venue-banner-container {
     margin-bottom: 3.5rem;
   }
@@ -178,9 +179,11 @@
   .venue-hero-section {
     padding: 9rem 2.5rem 2rem 2.5rem;
   }
+
   .venue-content-section {
     padding: 0 2.5rem 6rem 2.5rem;
   }
+
   .venue-coordinates-badge {
     top: 2rem;
     left: 2rem;
@@ -191,9 +194,11 @@
   .venue-hero-section {
     padding: 8rem 1.25rem 1.5rem 1.25rem;
   }
+
   .venue-content-section {
     padding: 0 1.25rem 5rem 1.25rem;
   }
+
   .venue-coordinates-badge {
     top: 1.25rem;
     left: 1.25rem;

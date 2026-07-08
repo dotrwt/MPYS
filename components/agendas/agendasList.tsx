@@ -37,9 +37,9 @@ export default function AgendasList() {
       {/* Grid List */}
       <div className="agendas-grid">
         {COMMITTEES_DATA.map((committee, index) => (
-          <ScrollReveal 
-            key={committee.id} 
-            className="agenda-card" 
+          <ScrollReveal
+            key={committee.id}
+            className="agenda-card"
             delay={100 + (index % 4) * 80}
           >
             {/* Card Header Info */}
@@ -101,7 +101,7 @@ export default function AgendasList() {
                     </svg>
                   </div>
                 </div>
-                
+
                 <h3 className="agenda-short-name">{committee.name}</h3>
               </div>
 
