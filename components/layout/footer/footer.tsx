@@ -14,7 +14,10 @@ export default function Footer() {
             <div className="footer-content">
                 {/* Top Row: Brand & Designer */}
                 <div className="footer-top-row">
-                    <div className="footer-brand">Madhya Pradesh Youth Summit®</div>
+                    <div className="footer-brand">
+                        <img src="/MPYS_T.png" alt="MPYS Logo" className="footer-logo" />
+                        <span className="footer-brand-text">Madhya Pradesh Youth Summit®</span>
+                    </div>
                     <div className="footer-designer">Developed by <a href="https://dotrwt.in" target="_blank" rel="noopener noreferrer">dotrwt</a></div>
                 </div>
 

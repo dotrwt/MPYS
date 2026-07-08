@@ -50,7 +50,8 @@ export default function Navbar() {
         >
             <div className="navbar-container">
                 <a href="/" className="navbar-item navbar-brand">
-                    Madhya Pradesh Youth Summit®
+                    <img src="/MPYS_T.png" alt="MPYS Logo" className="navbar-logo" />
+                    <span className="navbar-brand-text">Madhya Pradesh Youth Summit®</span>
                 </a>
 
                 {/* Desktop navigation links */}

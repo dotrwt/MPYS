@@ -184,8 +184,22 @@
   animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0s forwards;
 }
 
-.hero-squiggle {
-  filter: drop-shadow(0 0 8px rgba(209, 184, 252, 0.4));
+.hero-logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 20px rgba(209, 184, 252, 0.25));
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-logo:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .hero-logo {
+    height: 60px;
+  }
 }
 
 /* Center Title & CTA Button styling */
